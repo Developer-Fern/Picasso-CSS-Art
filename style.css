@@ -1,0 +1,77 @@
+
+body
+{
+	height: 100vh;
+	font-size: 2vmin;
+	background: #343941;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.file-explorer-css
+{
+	height: 30em;
+	width: 30em;
+	position: relative;
+	background: 
+		
+		/* Bottom red stripe */
+		linear-gradient(
+			#ee5566, #ee5566
+		) right 0 top 81% / 57% 2.5em,
+		
+		/* Center red stripe */
+		linear-gradient(
+			#ee5566, #ee5566
+		) right 0 top 64% / 57% 2.5em,
+		
+		/* Top red stripe */
+		linear-gradient(
+			#ee5566, #ee5566
+		) right 0 top 47% / 57% 2.5em,
+		
+		/* Yellow stripe */
+		linear-gradient(
+			#eecc55, #eecc55
+		) right 0 top 25% / 73% 2.5em;
+		
+	background-repeat: no-repeat;
+	background-color: #343941;
+    border-radius: 100%;
+	filter: drop-shadow( 0 0 4em rgba(233, 9, 46, 0.432) );
+}
+
+.file-explorer-css::before,
+.file-explorer-css::after {
+	content: '';
+	position: absolute;
+	height: 1.5em;
+	width: 1.5em;
+	border: .8em solid var(--c);
+	border-top-color: transparent;
+	border-left-color: transparent;
+	clip-path: polygon(
+		0 .8em,
+		100% .8em,
+		100% 100%,
+		.8em 100%,
+		.8em 0
+	);
+}
+
+.file-explorer-css::before {
+	--c: #eecc55;
+	
+	transform: rotate( 45deg );
+	left: 3.4em;
+	top: 5.6em;
+}
+
+.file-explorer-css::after {
+	--c: #ee5566;
+	
+	transform: rotate(-45deg);
+	left: 7.5em;
+	top: 12.5em;
+}
