@@ -42,3 +42,36 @@ body
 	filter: drop-shadow( 0 0 4em rgba(233, 9, 46, 0.432) );
 }
 
+.file-explorer-css::before,
+.file-explorer-css::after {
+	content: '';
+	position: absolute;
+	height: 1.5em;
+	width: 1.5em;
+	border: .8em solid var(--c);
+	border-top-color: transparent;
+	border-left-color: transparent;
+	clip-path: polygon(
+		0 .8em,
+		100% .8em,
+		100% 100%,
+		.8em 100%,
+		.8em 0
+	);
+}
+
+.file-explorer-css::before {
+	--c: #eecc55;
+	
+	transform: rotate( 45deg );
+	left: 3.4em;
+	top: 5.6em;
+}
+
+.file-explorer-css::after {
+	--c: #ee5566;
+	
+	transform: rotate(-45deg);
+	left: 7.5em;
+	top: 12.5em;
+}
