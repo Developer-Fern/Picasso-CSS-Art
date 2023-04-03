@@ -42,8 +42,8 @@ body
 	filter: drop-shadow( 0 0 4em rgba(233, 9, 46, 0.432) );
 }
 
-.file-explorer-css::before,
-.file-explorer-css::after {
+.file-explorer-css::before, /* Advance selector pseudo class */
+.file-explorer-css::after  { /* Advance selector pseudo class */
 	content: '';
 	position: absolute;
 	height: 1.5em;
@@ -60,7 +60,7 @@ body
 	);
 }
 
-.file-explorer-css::before {
+.file-explorer-css::before { /* Advance selector pseudo class */
 	--c: #eecc55;
 	
 	transform: rotate( 45deg );
@@ -68,7 +68,7 @@ body
 	top: 5.6em;
 }
 
-.file-explorer-css::after {
+.file-explorer-css::after { /* Advance selector pseudo class */
 	--c: #ee5566;
 	
 	transform: rotate(-45deg);
