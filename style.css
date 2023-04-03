@@ -37,6 +37,8 @@ body
 		) right 0 top 25% / 73% 2.5em;
 		
 	background-repeat: no-repeat;
-	background-color: beige;
+	background-color: #343941;
+    border-radius: 100%;
+	filter: drop-shadow( 0 0 4em rgba(233, 9, 46, 0.432) );
 }
 
